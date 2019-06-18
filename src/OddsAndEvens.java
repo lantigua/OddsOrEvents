@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class OddsAndEvens {
-
     public static void main(String[] args){
         System.out.println("Let’s play a game called Odds and Evens");
 
@@ -18,7 +16,6 @@ public class OddsAndEvens {
         }else if(choose.equals("E")){
             System.out.println(name +" has picked \"EVENS\"! The computer will be odds.");
         }else System.out.println(name +" you must pick O or E \n **********************************************");
-
         System.out.println("--------------------------------------------------------------------------------------------");
 
         System.out.println("How many “fingers” do you put out?");
@@ -28,14 +25,11 @@ public class OddsAndEvens {
         Random rand = new Random();
         int computer = rand.nextInt(6);
         System.out.println("The computer plays number "+ computer);
-
         System.out.println("--------------------------------------------------------------------------------------------");
 
         int sum = userFingers + computer;
         System.out.println(userFingers + " + " + computer + " = " + sum);
-
         boolean oddOrEven = sum % 2 == 0;
-
         if (oddOrEven){
             System.out.println(sum + " is... even!");
             if (choose.equals("E")){
